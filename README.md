@@ -27,7 +27,7 @@ Clone the repository:
 
 Copy code
 ```
-git clone https://github.com/yourusername/time-based-lake-formation-access.git
+git clone https://github.com/johnche88/AWS-Lake-Formation-Time-based-Temp-Access.git
 ```
 ```
 cd AWS-Lake-Formation-Time-based-Temp-Access
