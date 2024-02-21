@@ -19,6 +19,7 @@ Before you can use this workflow, you need to have the following:
 * The AWS CLI installed and configured.
 * Python 3.8 or higher.
 * Basic familiarity with AWS services, particularly Lambda, Lake Formation, and EventBridge.
+* Ensure the AWS Lambda for revokeLFAccess has Resource-based policy(under permission) statements has event.amazonaws.com and lambda:InvokeFunction
 
 ### Getting Started
 Setting Up Your Environment
