@@ -52,6 +52,23 @@ Ensure you have Python 3.8+ installed. You can install required Python packages 
 To initiate the workflow using API Gateway or UI backed with API gateway. Invoke the LF-access-grant AWS Lambda function with the necessary parameters (principal, table details, and access, duration). The function will grant access and schedule the revocation using AWS EventBridge based on the specified duration.
 <b>Note</b> : You can use a UI and make this more dynamic for inputs like principal, table details, and access, duration
 
+### AWS SAM Template Overview
+This AWS SAM template provisions two AWS Lambda functions with specific roles and permissions designed for managing AWS Lake Formation access. It leverages IAM roles with predefined policies to allow the Lambda functions to perform operations such as granting and revoking Lake Formation permissions, alongside creating and managing CloudWatch Logs and EventBridge rules.
+
+#### Deployment Steps
+* Prepare Your Environment: Ensure you have AWS CLI and AWS SAM CLI installed and configured with your AWS account.
+* Build the SAM Application: Navigate to the project directory and execute sam build. This command prepares your application for deployment.
+* Deploy the SAM Application: Run sam deploy --guided to deploy your application. Follow the prompts to specify the stack name, AWS region, and other configurations. This process will create or update resources defined in the SAM template in your AWS account.
+Confirmation: During deployment, you'll be asked to confirm resource changes and IAM role creation. Respond according to your preferences to proceed with the deployment.
+* Execution Prompts Explanation
+* Stack Name: Unique identifier for your stack.
+* AWS Region: AWS region where your resources will be deployed.
+* Confirm changes before deploy: Opt to review changes before they are executed.
+* Allow SAM CLI IAM role creation: Permissions for SAM to create IAM roles needed for your Lambda functions.
+* Disable rollback: Choose whether to preserve or rollback resources if the deployment fails.
+* Save arguments to configuration file: Opt to save your deployment settings for future use.
+
+
 ### Contributing
 Contributions are welcome! Please follow the guidelines in the CONTRIBUTING.md file for details on how to submit pull requests, report issues, or suggest enhancements.
 
