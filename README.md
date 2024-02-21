@@ -25,13 +25,12 @@ Before you can use this workflow, you need to have the following:
 Setting Up Your Environment
 Clone the repository:
 
-bash
 Copy code
 ```
 git clone https://github.com/yourusername/time-based-lake-formation-access.git
 ```
 ```
-cd time-based-lake-formation-access
+cd AWS-Lake-Formation-Time-based-Temp-Access
 ```
 
 ### Install required dependencies:
